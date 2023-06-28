@@ -1,0 +1,232 @@
+@import '../scss/variables.scss';
+
+
+.container{
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+
+}
+
+.options{
+  width: 700px;
+  height: 120px;
+  border: 10px solid white;
+  position: fixed;
+  margin-top: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.options button{
+  width: 70px;
+  height: 70px;
+  margin: 15px;
+  background-color: transparent;
+  border: 5px solid white;
+  outline: 0;
+  color: white;
+  border-radius: 50%;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover{
+    transform: scale(1.2);
+    border-top: 5px solid $first-color;
+    border-right: 5px solid $third-color;
+    border-bottom: 5px solid $fifth-color;
+    border-left: 5px solid $seventh-color;
+    box-shadow: 0 0 15px white;
+  }
+}
+
+
+.on .c1{
+  background-color: $second-color;
+  box-shadow: 0 0 30px 25px $first-shadow;
+  animation: animationRed infinite;
+}
+
+
+.on .c2{
+  background-color: $second-color;
+  box-shadow: 0 0 30px 25px $second-shadow;
+  animation: animationOrange infinite;
+}
+
+.on .c3{
+  background-color: $third-color;
+  box-shadow: 0 0 30px 25px $third-shadow;
+  animation: animationYellow infinite;
+}
+
+.on .c4{
+  background-color: $fourth-color;
+  box-shadow: 0 0 30px 25px $fourth-shadow;
+  animation: animationGreen infinite;
+}
+
+.on .c5{
+  background-color: $fifth-color;
+  box-shadow: 0 0 30px 25px $fifth-shadow;
+  animation: animationCyan infinite;
+}
+
+.on .c6{
+  background-color: $sixth-color;
+  box-shadow: 0 0 30px 25px $sixth-shadow;
+  animation: animationBlue infinite;
+}
+
+.on .c7{
+  background-color: $seventh-color;
+  box-shadow: 0 0 30px 25px $seventh-shadow;
+  animation: animationPurple infinite;
+}
+
+.circle{
+  min-width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+
+#apply{
+  border-radius: 5px;
+  width: 100px;
+
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+
+#intensity{
+  width: 200px;
+  height: 10px;
+  -webkit-appearance: none;
+  appearance: none;
+  opacity: 0,7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  outline: 0;
+
+}
+
+#intensity::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.intDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 20px;
+
+  p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  }
+
+
+@keyframes animationRed {
+  0%{
+    box-shadow: 0 0 5px 5px $first-shadow ;
+  }
+  50%{
+    box-shadow: 0 0 30px 25px $first-shadow;
+  }
+  100%{
+    box-shadow: 0 0 5px 5px $first-shadow;
+  }
+}
+
+
+@keyframes animationOrange {
+  0%{
+    box-shadow: 0 0 5px 5px $second-shadow ;
+  }
+  50%{
+    box-shadow: 0 0 30px 25px $second-shadow;
+  }
+  100%{
+    box-shadow: 0 0 5px 5px $second-shadow;
+  }
+}
+
+@keyframes animationYellow {
+  0%{
+    box-shadow: 0 0 5px 5px $third-shadow ;
+  }
+  50%{
+    box-shadow: 0 0 30px 25px $third-shadow;
+  }
+  100%{
+    box-shadow: 0 0 5px 5px $third-shadow;
+  }
+}
+
+@keyframes animationGreen {
+  0%{
+    box-shadow: 0 0 5px 5px $fourth-shadow ;
+  }
+  50%{
+    box-shadow: 0 0 30px 25px $fourth-shadow;
+  }
+  100%{
+    box-shadow: 0 0 5px 5px $fourth-shadow;
+  }
+}
+
+@keyframes animationCyan {
+  0%{
+    box-shadow: 0 0 5px 5px $fifth-shadow ;
+  }
+  50%{
+    box-shadow: 0 0 30px 25px $fifth-shadow;
+  }
+  100%{
+    box-shadow: 0 0 5px 5px $fifth-shadow;
+  }
+}
+
+@keyframes animationBlue {
+  0%{
+    box-shadow: 0 0 5px 5px $sixth-shadow ;
+  }
+  50%{
+    box-shadow: 0 0 30px 25px $sixth-shadow;
+  }
+  100%{
+    box-shadow: 0 0 5px 5px $sixth-shadow;
+  }
+}
+
+
+@keyframes animationPurple {
+  0%{
+    box-shadow: 0 0 5px 5px $seventh-shadow ;
+  }
+  50%{
+    box-shadow: 0 0 30px 25px $seventh-shadow;
+  }
+  100%{
+    box-shadow: 0 0 5px 5px $seventh-shadow;
+  }
+}
+
